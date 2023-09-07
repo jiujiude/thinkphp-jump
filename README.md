@@ -5,7 +5,7 @@
 ## 安装
 
 ~~~php
-composer require liliuwei/thinkphp-jump
+composer require jiujiude/thinkphp-jump
 ~~~
 
 ## 配置
