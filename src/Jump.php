@@ -6,7 +6,7 @@
  * Time: 22:43
  */
 
-namespace liliuwei\think;
+namespace jiujiude\think;
 use think\exception\HttpResponseException;
 use think\App;
 use think\Response;
