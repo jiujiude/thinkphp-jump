@@ -13,8 +13,8 @@ composer require jiujiude/thinkphp-jump
 // 安装之后会在config目录里生成jump.php配置文件
 return[
     // 默认跳转页面对应的模板文件
-    'dispatch_success_tmpl' => app()->getRootPath().'/vendor/liliuwei/thinkphp-jump/src/tpl/dispatch_jump.tpl',
-    'dispatch_error_tmpl'   => app()->getRootPath().'/vendor/liliuwei/thinkphp-jump/src/tpl/dispatch_jump.tpl',
+    'dispatch_success_tmpl' => app()->getRootPath().'/vendor/jiujiude/thinkphp-jump/src/tpl/dispatch_jump.tpl',
+    'dispatch_error_tmpl'   => app()->getRootPath().'/vendor/jiujiude/thinkphp-jump/src/tpl/dispatch_jump.tpl',
 ];
 ~~~
 
@@ -29,7 +29,7 @@ namespace app\controller;
 
 class Index 
 {
-    use \liliuwei\think\Jump; 
+    use \jiujiude\think\Jump; 
     public function index()
     {
         //return $this->error('error');
@@ -135,7 +135,7 @@ abstract class BaseController
 
         return $v->failException(true)->check($data);
     }
-    use \liliuwei\think\Jump;
+    use \jiujiude\think\Jump;
 }
 
 ~~~
